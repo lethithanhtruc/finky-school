@@ -1,0 +1,31 @@
+.teacher-page{
+    .wrapper-tool{
+        margin-bottom: 66px;
+    }
+
+    .wrapper-filter{
+        margin-bottom: 17px;
+
+        .wrapper-filter-campus{
+            label{
+                font-weight: 600;
+                font-size: 20px;
+                color: #313131;
+            }
+
+            .ant-select{
+                color: #16499C
+            }
+        }
+
+        .wrapper-form-search{
+            button{
+                background: linear-gradient(180deg, #EE509C 0%, #EE3958 100%);
+            }
+
+            input{
+                width: 219px;
+            }
+        }
+    }
+}

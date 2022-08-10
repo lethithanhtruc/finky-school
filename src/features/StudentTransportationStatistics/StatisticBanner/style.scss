@@ -1,0 +1,147 @@
+@import '../../../styles/breakpoint';
+
+.student-transportation-statistics__statistic-banner {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    position: relative;
+
+    .statistic-banner__loading {
+        position: absolute;
+        top:0;
+        left:0;
+        width: 100%;
+        height: 100%;
+        z-index: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .student-transportation-statistics__statistic-block {
+        flex: 1;
+        min-width: 190px;
+        height: 121px;
+        border: 1px solid #BFBFBF;
+        border-radius: 8px;
+    }
+
+    .empty-block {
+        flex: 1;
+        min-width: 190px;
+        height: 1px;
+
+    }
+
+    @include mediaMinWidthCustom(900px) {
+        .empty-block:nth-last-child(1),
+        .empty-block:nth-last-child(2),
+        .empty-block:nth-last-child(3),
+        .empty-block:nth-last-child(4) {
+            display: none;
+        }
+
+        .empty-block:nth-last-child(5) {
+            display: block;
+        }
+    }
+
+    @include mediaMaxWidthCustom(900px) {
+        .empty-block:nth-last-child(1),
+        .empty-block:nth-last-child(2),
+        .empty-block:nth-last-child(3),
+        .empty-block:nth-last-child(4) {
+            display: none;
+        }
+
+        .empty-block:nth-last-child(5) {
+            display: block;
+        }
+    }
+
+    @include mediaMinWidthCustom(1120px) {
+        .empty-block:nth-last-child(1),
+        .empty-block:nth-last-child(2) {
+            display: none;
+        }
+
+        .empty-block:nth-last-child(3),
+        .empty-block:nth-last-child(4),
+        .empty-block:nth-last-child(5) {
+            display: block;
+        }
+    }
+
+    @include mediaMinWidthCustom(1366px) {
+        .empty-block {
+            display: none !important;
+        }
+    }
+
+    .summary {
+        &.morning {
+            background-image: url('../images/analytics_wheater-Morning.svg');
+        }
+
+        &.afternoon {
+            background-image: url('../images/analytics_wheater-Afternoon.svg');
+        }
+        
+        background-position: bottom right;
+        background-size: cover;
+        background-repeat: no-repeat;
+        border: none;
+        position: relative;
+
+        .block__label,
+        .block__total {
+            position: absolute;
+            color: white;
+            font-weight: 500;
+        }
+
+        .block__label {
+            top: 16px;
+            left: 24px;
+            font-size: 16px;
+            line-height: 18px;
+            font-weight: 500;
+        }
+
+        .block__total {
+            font-size: 48px;
+            left: 24px;
+            top: 34px;
+            font-weight: bold;
+            line-height: 50px;
+        }
+    }
+
+    .finish,
+    .unfinish,
+    .ontime,
+    .onlate {
+        position: relative;
+
+        .block__label,
+        .block__total {
+            position: absolute;
+        }
+
+        .block__label {
+            top: 65px;
+            left: 24px;
+            font-size: 16px;
+            line-height: 18px;
+            color: #818181;
+        }
+
+        .block__total {
+            font-size: 48px;
+            left: 24px;
+            top: 10px;
+            font-weight: bold;
+            line-height: 50px;
+        }
+    }
+}

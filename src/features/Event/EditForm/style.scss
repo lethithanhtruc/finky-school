@@ -1,0 +1,201 @@
+@import '../../../styles/mixins.scss';
+
+.event-edit-form {
+  flex: 1;
+  // display: flex;
+
+  .event-edit-form__note {
+    .ant-form-item-label {
+        margin-right: -5px;
+    }
+
+    .ant-form-item-control-input {
+        width: calc(100% + 5px);
+    }
+  }
+
+  .event-edit-form__receiver {
+    .ant-form-item-label {
+      margin-top: 6px;
+    }
+  }
+
+  .receiver-input {
+    .receiver-input__type {
+      display: inline-flex;
+      flex-wrap: wrap;
+      width: 100%;
+    }
+
+    .receiver-input__type-item {
+      // flex: 1;
+      // flex: 0 100px;
+      flex-grow: 1;
+      max-width: 160px;
+      // width: auto;
+      border: 1px solid #BFBFBF;
+      border-radius: 8px;
+      padding-top: 8px;
+      padding-bottom: 8px;
+      padding-left: 24px;
+      padding-right: 24px;
+      margin: 0 0 0 8px;
+
+      &.selected {
+        color: #16499C;
+        border-color: #16499C;
+        background-color: rgba(51, 125, 244, 0.1);
+      }
+
+      &:first-of-type {
+        margin-left: 0;
+      }
+
+      &:hover {
+        background-color: rgba(51, 125, 244, 0.3);
+        cursor: pointer;
+      }
+    }
+  }
+
+  .grades-input {
+    .grades-input__legends {
+      display: flex;
+
+      .grades-input__legends-item {
+        display: flex;
+
+        .grades-input__legends-help {
+          line-height: 16px;
+          font-size: 14px;
+          margin-left: 4px;
+        }
+
+        .grades-input__legends-block {
+          width: 42px;
+          height: 16px;
+          border-radius: 6px;
+        }
+  
+        .selected {
+          border: 1px solid #16499C;
+          background-color: #16499C;
+        }
+  
+        .unselected {
+          margin-left: 40px;
+          border: 1px solid #313131;
+        }
+      }
+    }
+
+    @include scrollbar-style-01('.grades-input__grades');
+    .grades-input__grades {
+      margin-top: 18px;
+      border: 1px solid #818181;
+      border-radius: 4px;
+      padding: 10px;
+      height: 200px;
+      max-height: 200px;
+      overflow: auto;
+      // min-height: 200px;
+
+      .grades-input__grades-row {
+        display: flex;
+
+        .grades-input__grade {
+          .grades-input__grade-item {
+            border: 1px solid #313131;
+            padding: 2px 6px;
+            border-radius: 4px;
+            margin: 4px;
+            cursor: pointer;
+            white-space: nowrap;
+
+            &.selected {
+              border-color: #16499C;
+              background: #16499C;
+              color: #fff;
+            }
+          }
+        }
+
+        .grades-input__classrooms {
+          margin-left: 20px;
+          position: relative;
+          display: flex;
+          justify-content: flex-start;
+          flex-wrap: wrap;
+          padding: 4px;
+
+          &::before {
+            position: absolute;
+            content: '';
+            top: 4px;
+            left: -10px;
+            border-left: 1px solid;
+            height: 100%;
+          }
+
+          .grades-input__classrooms-item {
+            border: 1px solid #313131;
+            padding: 2px 6px;
+            border-radius: 4px;
+            cursor: pointer;
+            margin-right: 4px;
+
+            &.selected {
+              border-color: #16499C;
+              background: #16499C;
+              color: #fff;
+            }
+          }
+        }
+
+        &:last-of-type {
+          .grades-input__classrooms {
+            &::before {
+              position: absolute;
+              content: '';
+              top: -4px;
+              left: -10px;
+              border-left: 1px solid;
+              height: 100%;
+            }
+          }
+        }
+      }
+    }
+
+  }
+
+  .language-buttons {
+    display: flex;
+    margin-bottom: 4px;
+
+    & .language-buttons__button {
+      padding: 4px 24px;
+      border: 1px solid #BFBFBF;
+      border-radius: 4px;
+      margin-right: 4px;
+      cursor: pointer;
+
+      &.active {
+        color: #16499C;
+        border-color: #16499C;
+        background: rgba(51, 125, 244, 0.1);
+      }
+
+      // &.error {
+      //   color: rgb(225, 25, 0);
+      //   border-color: rgb(225, 25, 0);
+      //   background: rgba(225, 25, 0, 0.1);
+      // }
+    }
+  }
+}
+
+.event-language-option {
+  display: flex;
+  justify-content: space-between;
+}

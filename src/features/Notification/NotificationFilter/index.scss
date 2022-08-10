@@ -1,0 +1,52 @@
+@import "../../../styles/variables";
+
+.notification-filter {
+  .notification-filter__select-group {
+    width: 100%;
+
+    .notification-filter__select {
+      width: 100%;
+    }
+  }
+
+  .notification-filter__search {
+    .ant-input-affix-wrapper {
+      border: 1px solid $border-color-3 !important;
+      z-index: 1;
+    }
+    .ant-btn {
+      margin-left: 5px;
+      padding: 4px 10px !important;
+      border-radius: 4px !important;
+
+      // border: 1px solid $border-color-3;
+      // border-radius: 4px;
+      // box-shadow: none;
+      // background: white;
+      // box-sizing: border-box;
+
+      // color: $primary-color;
+      // font-weight: normal;
+      // text-shadow: none;
+    }
+  }
+
+  .notification-filter__menu {
+    border-bottom: none;
+    display: flex;
+    width: 100%;
+
+    .ant-menu-item {
+      margin: 0;
+      padding: 0 10px;
+      line-height: 30px;
+      color: $black-500;
+
+      &:hover,
+      &.ant-menu-item-selected {
+        color: $primary-color;
+        border-color: $primary-color;
+      }
+    }
+  }
+}

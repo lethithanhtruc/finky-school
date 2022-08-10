@@ -1,0 +1,17 @@
+.wrapper-upload-image{
+    position: relative;
+    display: inline-block;
+
+    img{
+        border-radius: 4px;
+        max-width: 100%;
+    }
+
+    .btn-select-image{
+        position: absolute;
+        bottom: 8px;
+        right: 8px;
+        padding-top: 2px;
+        padding-left: 9px;
+    }
+}

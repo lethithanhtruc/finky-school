@@ -1,0 +1,27 @@
+.wrapper-upload-multi-images{
+    position: relative;
+
+    .wrapper-btn-add-image{
+        position: absolute;
+        bottom: 45px;
+        width: 100%;
+        text-align: center;
+
+        .btn-add-image{
+            padding: 0px 10px;
+            font-size: 12px;
+            color: #FFFFFF;
+        }
+    }
+    .wrapper-text-help{
+        position: absolute;
+        bottom: 26px;
+        width: 100%;
+        text-align: center;
+
+        .text-help{
+            font-size: 12px;
+            color: #AEAEAE;
+        }
+    }
+}

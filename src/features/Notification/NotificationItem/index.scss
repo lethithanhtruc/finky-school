@@ -1,0 +1,119 @@
+@import "../../../styles/variables";
+
+.notification-item {
+  .notification-item__datetime {
+    font-weight: 500;
+    font-size: 16px;
+    color: $active-color;
+    padding-bottom: 16px;
+    line-height: 18px;
+  }
+
+  .notification-item__avatar {
+    position: relative;
+
+    .avatar__unread-mark {
+      position: absolute;
+      top: 8px;
+      left: -16px;
+      width: 8px;
+      height: 8px;
+      border-radius: 100%;
+      background-color: $primary-color;
+    }
+  }
+
+  .notification-item__meta {
+    border: 1px solid #ececec;
+    padding: 12px 24px;
+  }
+
+  .notification-item__title {
+    position: relative;
+
+    .title {
+      font-weight: 500;
+      font-size: 18px;
+      color: $black-900;
+    }
+    .time {
+      position: absolute;
+      right: 0;
+      top: 0;
+      font-size: 12px;
+      line-height: 16px;
+      color: $primary-grey-color;
+    }
+  }
+
+  .notification-item__desc {
+    color: $black-500;
+
+    strong {
+      color: $black-900;
+      font-weight: 500;
+
+      &.red {
+        color: $error-color;
+      }
+    }
+
+    &--margin-bottom {
+      margin-bottom: 16px;
+    }
+  }
+
+  .notification-item__footer {
+    margin-top: 8px;
+  }
+}
+
+.notification-detail {
+  border: 1px solid $border-color-3;
+  padding: 8px 12px 12px 12px;
+  width: 100%;
+
+  & > .ant-row:not(:last-child) {
+    margin-bottom: 5px;
+  }
+
+  .notification-detail__heading {
+    color: $black-900;
+  }
+
+  .notification-detail__message-wrapper {
+    padding: 12px 10px;
+
+    background-color: $black-100;
+    border-left: 2px solid $black-500;
+
+    .notification-detail__message {
+      color: $black-900;
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 24px;
+      margin: 0;
+
+      &--empty {
+        color: $black-500;
+      }
+    }
+  }
+
+  .notification-detail__change-item {
+    color: $black-500;
+    padding-left: 24px;
+  }
+
+  .notification_detail__text {
+    color: $black-900;
+    font-weight: 500;
+    font-size: 14px;
+  }
+}
+
+.change-arrow {
+  margin-left: 15px;
+  margin-right: 5px;
+  margin-bottom: 30px;
+}

@@ -1,0 +1,43 @@
+@mixin scrollbar-style-01($element) {
+  /* width */
+  #{$element}::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+    background: #ececec;
+    border-radius: 4px;
+  }
+
+  /* Track */
+  #{$element}::-webkit-scrollbar-track {
+    background: #ececec;
+    border-radius: 4px;
+  }
+
+  /* Handle */
+  #{$element}::-webkit-scrollbar-thumb {
+    background: #bfbfbf;
+    border-radius: 4px;
+  }
+
+  /* Handle on hover */
+  #{$element}::-webkit-scrollbar-thumb:hover {
+    background: #bfbfbf;
+    border-radius: 4px;
+  }
+}
+
+@mixin scrollbar-style-02($element) {
+  /* width */
+  #{$element}::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+    background: transparent;
+    border-radius: 4px;
+  }
+
+  /* Handle */
+  #{$element}::-webkit-scrollbar-thumb {
+    background: $disable-color;
+    border-radius: 4px;
+  }
+}

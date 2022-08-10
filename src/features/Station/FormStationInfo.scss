@@ -1,0 +1,219 @@
+.form-station-info{
+    .wrapper-info{
+        font-style: normal;
+        font-weight: bold;
+        font-size: 24px;
+        color: #16499C;
+
+        &.owner{
+            border-top: 1px solid #C4C4C4;
+            padding-top: 8px;
+            padding-bottom: 8px;
+            margin-top: 8px;
+        }
+    }
+
+    .ant-form-item{
+        margin-bottom: 16px;
+
+        .ant-form-item-label{
+            white-space: inherit;
+            text-align: left;
+
+            label{
+                width: 110px;
+                font-weight: normal;
+                font-size: 14px;
+                line-height: 17px;
+                color: #313131;
+                margin-right: 0;
+
+                &:before{
+                    display: none;
+                }
+                .required{
+                    color: #E11900;
+                    margin-left: 3px;
+                }
+            }
+        }
+
+        .ant-form-item-control{
+            .ant-form-item-control-input{
+                input, textarea, .ant-select{
+                    font-weight: normal;
+                    font-size: 14px;
+                    color: #000;
+                }
+                input[type=text], textarea, .ant-picker{
+                    padding-top: 6.5px;
+                    padding-bottom: 6.5px;
+                }
+                .ant-select-selector{
+                    padding-top: 3.5px;
+                    padding-bottom: 3.5px;
+                }
+                .ant-select-single:not(.ant-select-customize-input) .ant-select-selector{
+                    padding-top: 2.5px;
+                    padding-bottom: 2.5px;
+                    height: auto;
+                }
+            }
+        }
+
+        &.wrapper-item-status{
+            margin-top: 16px;
+
+            .ant-form-item-label{
+                padding-bottom: 3px;
+
+                label{
+                    width: 100%;
+                    font-weight: 500;
+                    font-size: 14px;
+                    color: #313131;
+                }
+            }
+
+            .ant-select{
+                color: #16499C!important;
+
+                .ant-select-arrow{
+                    color: #16499C!important;
+                }
+            }
+        }
+
+        &.wrapper-item-code-generate{
+            button{
+                padding: 6.5px 20px;
+                background: rgba(0, 52, 137, 0.05)!important;
+                border: 0.5px solid #16499C;
+                border-radius: 0;
+                font-weight: 600;
+                font-size: 14px;
+                color: #16499C;
+            }
+        }
+
+        &.wrapper-item-buttons{
+            margin-bottom: 0;
+
+            button{
+                width: 126px;
+            }
+        }
+
+        .ant-form-item{
+            margin-bottom: 0;
+        }
+    }
+
+    .wrapper-register-shuttle{
+        position: relative;
+        padding-top: 32px;
+        margin-top: 32px;
+
+        >.title{
+            margin-top: 4px;
+            margin-bottom: 36px;
+            font-weight: bold;
+            font-size: 24px;
+            color: #16499C;
+        }
+
+        &:before{
+            content: " ";
+            width: 100%;
+            height: 1px;
+            background: #AEAEAE;
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+        }
+
+        .wrapper-filter{
+            border:1px solid #E5E5E5;
+            border-radius: 8px;
+            padding: 16px;
+            margin-bottom: 16px;
+
+            .ant-select-selector{
+                height: 36px;
+                font-size: 14px;
+            }
+            .ant-select-single.ant-select-lg:not(.ant-select-customize-input):not(.ant-select-customize-input) .ant-select-selection-search-input {
+                height: 34px;
+            }
+            .ant-input-lg{
+                font-size: 14px;
+                padding: 0px 11px;
+            }
+            .ant-input-affix-wrapper-lg {
+                padding: 4.5px 11px;
+            }
+            .ant-input-prefix{
+                color: #818181;
+            }
+            .ant-btn-lg{
+                font-size: 14px;
+                font-weight: normal;
+                padding: 6px 20px;
+            }
+
+            .wrapper-filter-search{
+                width: 100%;
+                margin-top: 4px;
+
+                .ant-space-item:first-child{
+                    flex: auto;
+                }
+            }
+
+            .wrapper-table-student{
+                margin-top: 16px;
+
+                .btn-register{
+                    width: 105px;
+                    text-align: center;
+                    font-size: 16px;
+                    color: #FFFFFF;
+                    background: #219653;
+                    border-radius: 0;
+                    border: 0;
+
+                    &[disabled]{
+                        background: rgba(224, 224, 224, 0.5);
+                        color: #818181;
+                    }
+
+                    &.cancel{
+                        background: rgba(255, 59, 48, 0.2);
+                        color: #E11900;
+                    }
+                }
+            }
+
+            .wrapper-student-selected{
+                .title{
+                    font-weight: 500;
+                    font-size: 20px;
+                    color: #16499C;
+                    text-align: center;
+                    height: 36px;
+                }
+                .wrapper-statistic{
+                    background: rgba(0, 97, 255, 0.2);
+                    border-radius: 4px;
+                    text-align: center;
+                    height: 36px;
+                    line-height: 36px;
+                    margin-top: 4px;
+                    font-size: 16px;
+                    color: #000000;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,230 @@
+@import '../../../styles/mixins.scss';
+
+.event-page__detail-view {
+
+    .ant-modal-content {
+        .ant-modal-close-x {
+            width: 50px;
+            height: 50px;
+            color: white;
+            line-height: 50px;
+            font-size: 20px;
+        }
+    }
+
+    .ant-modal-body {
+        padding: 24px 32px 12px;
+    }
+
+    .ant-modal-header {
+        background: #16499c;
+        height: 50px;
+        display: flex;
+        align-items: center;
+
+        .ant-modal-title {
+            color: white;
+            font-size: 20px;
+            font-weight: 250;
+            padding-left: 20px;
+        }
+    }
+
+    .modal-title {
+        display: flex;
+        align-items: center;
+
+        .modal-title__stop-send {
+            padding: 4px 8px;
+            margin-left: 4px;
+            color: #16499C;
+            background: #fff;
+            border-radius: 4px;
+        }
+    }
+
+    .modal-detail {
+        width: 100%;
+
+        .data-detail {
+            width: 100%;
+
+            .data-detail__row {
+                width: 100%;
+                margin-bottom: 10px;
+                display: flex;
+                justify-content: space-between;
+
+                .row-item {
+                    display: flex;
+                    align-items: flex-start;
+
+                    &.full-width {
+                        flex: 1;
+                    }
+
+                    &.item-2 {
+                        justify-content: flex-end;
+                    }
+
+                    .row-item__cell {
+                        &.label {
+                            width: 140px;
+                            font-size: 20px;
+                            font-weight: 500;
+                        }
+
+                        &.box {
+                            border: 1px solid #818181;
+                            border-radius: 4px;
+                            padding: 5px 10px !important;
+                            min-height: 34px;
+                        }
+
+                        &.value {
+                            flex: 1;
+                            padding: 5px 0;
+                        }
+
+                        &.language {
+                            width: 100px;
+                        }
+
+                        &.code {
+                            width: 180px;
+                        }
+
+                        &.content {
+                            height: 120px;
+                        }
+
+                        &.classrooms {
+                            .grades-input {
+                                .grades-input__legends {
+                                  display: flex;
+                            
+                                  .grades-input__legends-item {
+                                    display: flex;
+                            
+                                    .grades-input__legends-help {
+                                      line-height: 16px;
+                                      font-size: 14px;
+                                      margin-left: 4px;
+                                    }
+                            
+                                    .grades-input__legends-block {
+                                      width: 42px;
+                                      height: 16px;
+                                      border-radius: 6px;
+                                    }
+                              
+                                    .selected {
+                                      border: 1px solid #16499C;
+                                      background-color: #16499C;
+                                    }
+                              
+                                    .unselected {
+                                      margin-left: 40px;
+                                      border: 1px solid #313131;
+                                    }
+                                  }
+                                }
+                            
+                                @include scrollbar-style-01('.grades-input__grades');
+                                .grades-input__grades {
+                                  margin-top: 18px;
+                                  border: 1px solid #818181;
+                                  border-radius: 4px;
+                                  padding: 10px;
+                                  height: 130px;
+                                  max-height: 130px;
+                                  overflow: auto;
+
+                                  .grades-input__grades-row {
+                                    display: flex;
+                            
+                                    .grades-input__grade {
+                                      .grades-input__grade-item {
+                                        border: 1px solid #313131;
+                                        padding: 2px 6px;
+                                        border-radius: 4px;
+                                        margin: 4px;
+                                        cursor: pointer;
+                                        white-space: nowrap;
+                            
+                                        &.selected {
+                                          border-color: #16499C;
+                                          background: #16499C;
+                                          color: #fff;
+                                        }
+                                      }
+                                    }
+                            
+                                    .grades-input__classrooms {
+                                      margin-left: 20px;
+                                      position: relative;
+                                      display: flex;
+                                      justify-content: flex-start;
+                                      flex-wrap: wrap;
+                                      padding: 4px;
+                            
+                                      &::before {
+                                        position: absolute;
+                                        content: '';
+                                        top: 4px;
+                                        left: -10px;
+                                        border-left: 1px solid;
+                                        height: 100%;
+                                      }
+                            
+                                      .grades-input__classrooms-item {
+                                        border: 1px solid #313131;
+                                        padding: 2px 6px;
+                                        border-radius: 4px;
+                                        cursor: pointer;
+                                        margin-right: 4px;
+                            
+                                        &.selected {
+                                          border-color: #16499C;
+                                          background: #16499C;
+                                          color: #fff;
+                                        }
+                                      }
+                                    }
+                            
+                                    &:last-of-type {
+                                      .grades-input__classrooms {
+                                        &::before {
+                                          position: absolute;
+                                          content: '';
+                                          top: -4px;
+                                          left: -10px;
+                                          border-left: 1px solid;
+                                          height: 100%;
+                                        }
+                                      }
+                                    }
+                                  }
+                                }
+                            
+                            }
+                        }
+
+                        &.note {
+                            height: 80px;
+                        }
+
+                        @include scrollbar-style-01('.have-scroll-bar');
+                        .have-scroll-bar {
+                            padding: 10px;
+                            border-radius: 4px;
+                            height: inherit;
+                            overflow: auto;
+                            border: 1px solid #818181;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

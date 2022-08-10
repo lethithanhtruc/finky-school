@@ -1,0 +1,22 @@
+.wrapper-upload{
+    .ant-upload.ant-upload-drag{
+        background: #EFF5FF;
+        border: 1px dashed #16499C;
+        border-radius: 8px;
+        padding: 10px 80px;
+
+        .ant-upload-drag-icon{
+            margin-bottom: 10px;
+
+            .anticon{
+                color: #16499C;
+            }
+        }
+        .ant-upload-text{
+            color: #AEAEAE;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 17px;
+        }
+    }
+}

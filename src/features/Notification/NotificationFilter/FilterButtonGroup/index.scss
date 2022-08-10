@@ -1,0 +1,39 @@
+@import "../../../../styles/variables";
+
+.filter-button-group {
+  margin-top: 16px;
+
+  .notification-filter__filter-button {
+    &:hover {
+      color: $primary-color;
+    }
+
+    .ant-checkbox {
+      display: none;
+
+      & + span {
+        display: flex;
+        align-items: center;
+        height: 96px;
+        padding: 12px;
+
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 18px;
+        color: $black-900;
+
+        border: 1px solid $border-color-3;
+        border-radius: 8px !important;
+        overflow: hidden;
+        box-shadow: none !important;
+      }
+    }
+
+    .ant-checkbox-checked {
+      & + span {
+        background-color: $inactive-bg-blue-color !important;
+        border-color: $primary-color !important;
+      }
+    }
+  }
+}

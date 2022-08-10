@@ -1,0 +1,41 @@
+@import "../../../../styles/variables";
+
+.notification-tag {
+  border: 0;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  margin-right: 0;
+
+  &--yellow {
+    color: #d48806;
+    background: #fffbe6;
+  }
+  &--blue {
+    color: $tag-color-blue;
+    background: $tag-background-blue;
+  }
+  &--green {
+    color: $tag-color-green;
+    background: $tag-background-green;
+  }
+  &--red {
+    color: $tag-color-red;
+    background: $tag-background-red;
+  }
+  &--grey {
+    color: $tag-color-grey;
+    background: $tag-background-grey;
+  }
+  &--purple {
+    color: $tag-color-purple;
+    background: $tag-background-purple;
+  }
+  &--default {
+    display: flex;
+    align-items: center;
+    color: $tag-color-grey;
+    background: $tag-background-grey;
+    border-radius: 24px;
+    height: 24px;
+  }
+}

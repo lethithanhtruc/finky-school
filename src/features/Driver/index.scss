@@ -1,0 +1,62 @@
+.driver-page {
+    .wrapper-tool {
+        margin-bottom: 66px;
+    }
+    .wrapper-filter{
+        margin-bottom: 17px;
+
+        .wrapper-form-search{
+            .ant-form-item{
+                margin-bottom: 0;
+            }
+
+            .wrapper-condition-filter{
+                .ant-select{
+                    color: #818181;
+                }
+
+                .ant-select:not(.ant-select-customize-input) .ant-select-selector{
+                    border: 0.5px solid #818181;
+                    border-radius: 0px;
+                    height: 36px;
+                }
+
+                .ant-select-single:not(.ant-select-customize-input) .ant-select-selector .ant-select-selection-search-input{
+                    height: 36px;
+                }
+
+                .ant-select-single .ant-select-selector .ant-select-selection-item, .ant-select-single .ant-select-selector .ant-select-selection-placeholder{
+                    line-height: 36px;
+                }
+            }
+
+            .wrapper-input-search-filter{
+                .ant-input-affix-wrapper{
+                    padding: 6px 11px;
+                    border: 0.5px solid #818181;
+                    border-radius: 0;
+
+                    .ant-input-prefix{
+                        color: #818181;
+                        font-size: 20px;
+                        margin-right: 8px;
+                    }
+
+                    input{
+                        font-weight: normal;
+                        font-size: 14px;
+                        color: #818181;
+                        width: 309px;
+                    }
+                }
+            }
+
+            .wrapper-btn-search-filter{
+                button{
+                    background: linear-gradient(180deg, #EE509C 0%, #EE3958 100%);
+                    padding: 6px 10px;
+                }
+            }
+        }
+    }
+}

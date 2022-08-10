@@ -1,0 +1,39 @@
+// Predefined Break-points
+$mediaXS: 576px;
+$mediaSM: 576px;
+$mediaMD: 768px;
+$mediaLG: 992px;
+$mediaXL: 1200px;
+$mediaXXL: 1600px;
+
+@mixin mediaXS() {
+  @media (max-width: $mediaXS) { @content; }
+}
+
+@mixin mediaSM() {
+  @media (min-width: $mediaSM) { @content; }
+}
+
+@mixin mediaMD() {
+  @media (min-width: $mediaMD) { @content; }
+}
+
+@mixin mediaLG() {
+  @media (min-width: $mediaLG) { @content; }
+}
+
+@mixin mediaXL() {
+  @media (min-width: $mediaXL) { @content; }
+}
+
+@mixin mediaXXL() {
+  @media (min-width: $mediaXXL) { @content; }
+}
+
+@mixin mediaMaxWidthCustom($screen) {
+  @media (max-width: $screen) { @content; }
+}
+
+@mixin mediaMinWidthCustom($screen) {
+  @media (min-width: $screen) { @content; }
+}

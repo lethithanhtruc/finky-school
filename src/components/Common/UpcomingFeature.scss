@@ -1,0 +1,32 @@
+.modal-upcoming-feature{
+  .upcoming-feature{
+    text-align: center;
+
+    .title{
+      font-weight: bold;
+      font-size: 24px;
+      line-height: 24px;
+      color: #16499C;
+      margin-top: 52px;
+    }
+    .desc{
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 24px;
+      color: #4F4F4F;
+      margin-top: 10px;
+    }
+  }
+
+  .ant-modal-content{
+    border-radius: 8px;
+
+    .ant-modal-body{
+      padding-bottom: 40px;
+    }
+  }
+
+  .ant-modal-confirm-btns{
+    display: none;
+  }
+}

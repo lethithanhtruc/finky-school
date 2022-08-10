@@ -1,0 +1,36 @@
+.ant-form {
+    .ant-form-item-label label {
+        color: #313131;
+        font-size: 16px;
+        white-space: pre-wrap;
+    }
+
+    .ant-form-item {
+        .ant-form-item-label{
+            label {
+                &:before {
+                    display: none;
+                }
+
+                // &.ant-form-item-required {
+                //     &:after {
+                //         content: '*';
+                //         color: #E11900;
+                //     }
+                // }
+
+                &:after {
+                    position: absolute;
+                }
+            }
+        }
+
+        .item-label-required-asterisk {
+            color: #E11900;
+        }
+
+        .ant-form-item-explain {
+            color: #E11900;
+        }
+    }
+}

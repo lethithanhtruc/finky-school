@@ -1,0 +1,30 @@
+.device-management__data-view {
+    .data-body {
+        margin-bottom: 16px;
+    }
+    .data-pagination {
+        display: flex;
+        justify-content: flex-end;
+        margin-bottom: 4px;
+    }
+
+    // .ant-table-tbody {
+    //     .ant-table-row {
+    //         .ant-table-cell {
+    //             padding-top: 5px;
+    //             padding-bottom: 5px;
+    //         }
+    //     }
+    // }
+}
+
+.device-management__function-item {
+    margin-right: 10px;
+    background: #E8F0FC;
+    border-radius: 4px;
+    color: #3678E3;
+    padding: 4px 8px;
+    white-space: nowrap;
+    // cursor: pointer;
+}
+

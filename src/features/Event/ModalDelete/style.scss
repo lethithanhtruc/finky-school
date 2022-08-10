@@ -1,0 +1,45 @@
+@import '../../../styles/mixins.scss';
+
+.event-page__delete {
+    .ant-modal-content {
+        .ant-modal-close-x {
+            width: 50px;
+            height: 50px;
+            color: white;
+            line-height: 50px;
+            font-size: 20px;
+        }
+    }
+
+    .ant-modal-body {
+        padding: 24px 16px 12px;
+    }
+
+    .ant-modal-header {
+        background: #16499c;
+        height: 50px;
+
+        .ant-modal-title {
+            color: white;
+            font-size: 20px;
+            font-weight: 250;
+        }
+    }
+
+    .modal-detail {
+        width: 100%;
+
+        .modal-detail__error-message {
+            color: rgb(225, 25, 0);
+        }
+        
+        .modal-detail__footer {
+            display: flex;
+            justify-content: flex-end;
+
+            .modal-detail__footer-delete {
+                margin-left: 5px;
+            }
+        }
+    }
+}

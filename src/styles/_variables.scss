@@ -1,0 +1,53 @@
+$color-main: #332a7c;
+$white: #ffffff;
+
+$black: #000000;
+$black-2: #434343;
+$black-100: #f5f5f5; // Name is based on Figma design
+$black-500: #8c8c8c; // Name is based on Figma design
+$black-900: #1f1f1f; // Name is based on Figma design
+
+$dark-red: #ff4a33;
+$light-red: #ffe8e6;
+
+$boder-color: #818181;
+$disable-color: #bfbfbf;
+$active-color: #313131;
+$active-color-2: #1f1f1f;
+$primary-color: #16499c;
+$primary-grey-color: #818181;
+$warning-color: #ff7766;
+$error-color: #ff331a;
+$link-color: #007aff;
+$summary-color: #ffe8e6;
+$active-blue-color: #337df4;
+$active-blue-color-2: #2069df;
+$active-blue-color-3: #4c87e6;
+$active-blue-color-4: #edf3fd;
+$inactive-bg-blue-color: #e8f0fc;
+$inactive-txt-blue-color: #79a5ec;
+$border-color: #aeaeae;
+$border-color-2: #f0f0f0;
+$border-color-3: #d9d9d9;
+$table-head-bg: #ececec;
+$background-active-color: rgba($active-blue-color, 0.1);
+$suffix: #14142b;
+$legend-color-1: #ffe8e5;
+$legend-color-2: #f5f5f5;
+$background-orange: #ffbf60;
+$background-orange-2: #ff604c;
+$background-hover: #bdd7ff;
+
+// Notification Tag color
+$tag-color-yellow: #ffb600;
+$tag-background-yellow: #fff8e6;
+$tag-color-blue: #1954b3;
+$tag-background-blue: $inactive-bg-blue-color;
+$tag-color-purple: #7b68ee;
+$tag-background-purple: #ebe8fc;
+$tag-color-green: #2dac46;
+$tag-background-green: #eafaf1;
+$tag-color-grey: $black-900;
+$tag-background-grey: $border-color-2;
+$tag-color-red: #ff331a;
+$tag-background-red: #ffe8e5;

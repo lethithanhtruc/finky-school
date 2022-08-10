@@ -1,0 +1,38 @@
+.event-page__data-view {
+    .data-body {
+        margin-bottom: 16px;
+    }
+    .data-pagination {
+        display: flex;
+        justify-content: flex-end;
+        margin-bottom: 4px;
+    }
+
+    .three-dot-action {
+        border: none;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-left: 5px;
+        height: 28px;
+        background: none;
+        border-radius: 2px;
+
+        &:hover {
+            background: #DDD;
+        }
+    }
+
+    .cancel-event-action {
+        background: #F5F5F5;
+        cursor: pointer;
+        border-radius: 4px;
+        padding: 4px 8px;
+        
+        &:hover {
+            background: #DDD;
+        }
+    }
+}
+

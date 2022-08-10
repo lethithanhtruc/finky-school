@@ -1,0 +1,23 @@
+.event-page__create {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+
+  .event-create__action-save {
+    
+    & > button:first-of-type {
+      margin-right: 2px;
+      width: 100px;
+      min-width: 100px;
+      max-width: 100px;
+    }
+
+    .ant-btn {
+      border-radius: 4px !important;
+    }
+
+    .ant-btn-icon-only.ant-dropdown-trigger {
+      padding: 2.4px 0;
+    }
+  }
+}

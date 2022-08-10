@@ -1,0 +1,417 @@
+@import "../../../styles/variables";
+@import "../../../styles/mixins";
+
+.history-attendance-and-transport {
+  .group-content {
+    background-color: $white;
+    border-radius: 4px;
+    margin: 0 0 10px 0;
+    padding: 16px;
+  }
+  .top-bar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .statistics-info-wrapper {
+    .information {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: flex-start;
+      margin: 0 0 10px 0;
+      &.statistics {
+        margin: 0 0 0 0;
+        .statistic {
+          margin: 0 32px 0 0;
+          &:last-child {
+            margin: 0 0 0 0;
+          }
+        }
+      }
+      svg {
+        background: $inactive-bg-blue-color;
+        border-radius: 4px;
+        margin: 0 8px 0 0;
+        path {
+          fill: $active-blue-color-2;
+        }
+      }
+      .main-info {
+        a {
+          color: $black;
+          font-style: normal;
+          font-weight: bold;
+          font-size: 24px;
+          line-height: 24px;
+        }
+      }
+    }
+  }
+  .filter-bar-wrapper {
+    .hidden {
+      height: 34px;
+    }
+    .actions {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: flex-start;
+      .time-semester {
+        height: 36px;
+        width: 226px;
+        padding: 0 16px;
+        margin: 0 8px;
+        border: 1px solid $border-color;
+        border-radius: 4px;
+        &:hover {
+          cursor: pointer;
+          border: 1px solid $primary-color;
+          .ant-picker-suffix {
+            svg {
+              path {
+                fill: $primary-color;
+              }
+            }
+          }
+        }
+        .ant-picker-input {
+          input {
+            color: $active-color;
+          }
+        }
+        .ant-picker-range-separator {
+          padding: 0 4px;
+
+          .ant-picker-separator {
+            width: auto;
+            height: auto;
+            .anticon {
+              display: none;
+            }
+            &::after {
+              content: "-";
+              color: $active-color;
+              font-size: 14px;
+              text-align: center;
+            }
+          }
+        }
+        .ant-picker-suffix {
+          svg {
+            path {
+              fill: $suffix;
+            }
+          }
+        }
+      }
+      .link-export {
+        border: 1px solid $border-color;
+        border-radius: 4px;
+        &.disable {
+          a {
+            pointer-events: none;
+            cursor: default;
+          }
+        }
+        a {
+          color: $active-color;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          height: 34px;
+          padding: 0 8px;
+          font-size: 14px;
+        }
+        svg {
+          fill: $active-color !important;
+          margin-left: 10px;
+        }
+        &:hover {
+          cursor: pointer;
+          border: 1px solid $primary-color;
+          a {
+            color: $primary-color;
+          }
+          svg {
+            fill: $primary-color !important;
+          }
+        }
+      }
+    }
+  }
+  .main-content {
+    .heading-table {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin: 0 0 16px 0;
+    }
+    .legends {
+      display: flex;
+      .legend {
+        display: flex;
+        margin: 0 16px 0 0;
+        &:last-child {
+          margin: 0 0 0 0;
+        }
+        .block-color {
+          width: 20px;
+          height: 20px;
+          margin: 0 8px 0 0;
+        }
+        .label {
+          font-size: 14px;
+          color: $primary-grey-color;
+        }
+        &.absent {
+          .block-color {
+            background: $error-color;
+          }
+        }
+        &.late {
+          .block-color {
+            background: $legend-color-1;
+          }
+        }
+        &.play {
+          .block-color {
+            background: $legend-color-2;
+            border-radius: 50%;
+            color: $black;
+            font-size: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+          }
+        }
+      }
+    }
+    .table-history {
+      user-select: none;
+      @include scrollbar-style-02(".ant-table-body");
+
+      .ant-table-cell-scrollbar {
+        visibility: hidden;
+      }
+      .ant-table-container {
+        border: none;
+        .ant-table-header {
+          .ant-table-thead {
+            tr {
+              th {
+                padding: 0 12px;
+                height: 44px;
+                &.empty {
+                  background: $white !important;
+                  border-right: none;
+                  padding: 0 0;
+                  height: 31px;
+                }
+                &.goToShool {
+                  background: rgba(
+                    $color: $active-blue-color-2,
+                    $alpha: 0.15
+                  ) !important;
+                  border-bottom: 1px solid $active-blue-color-2 !important;
+                  border-right: none;
+                  border-radius: 4px 0 0 0;
+                  padding: 0 0;
+                  height: 31px;
+                  &.child {
+                    border-bottom: 1px solid $border-color-2 !important;
+                    padding: 0 12px;
+                    height: 44px;
+                    border-radius: none;
+                  }
+                }
+                &.backHome {
+                  background: rgba(
+                    $color: $background-orange,
+                    $alpha: 0.15
+                  ) !important;
+                  border-bottom: 1px solid $background-orange !important;
+                  border-right: none;
+                  border-radius: 0 4px 0 0;
+                  padding: 0 0;
+                  height: 31px;
+                  &.child {
+                    border-bottom: 1px solid $border-color-2 !important;
+                    padding: 0 12px;
+                    height: 44px;
+                    border-radius: none;
+                  }
+                }
+                .column-sorting {
+                  display: flex;
+                  flex-direction: row;
+                  justify-content: space-between;
+                  align-items: center;
+                  .action-sort {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    svg {
+                      fill: $disable-color !important;
+                      cursor: pointer;
+                      &.active {
+                        fill: $active-color-2 !important;
+                      }
+                      &.arrow-up {
+                        margin-bottom: 2px;
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+
+        .ant-table-body {
+          overflow-y: auto !important;
+          width: calc(100% + 9px);
+          padding-right: 9px;
+          .ant-table-tbody {
+            tr {
+              td {
+                padding: 8px 12px;
+                .wrapper-time-transport {
+                  .ant-avatar {
+                    cursor: pointer;
+                  }
+                }
+                &.play-day {
+                  .wrapper-time-transport {
+                    .time {
+                      font-size: 14px;
+                    }
+                  }
+                }
+                .wrapper-time-transport {
+                  display: flex;
+                  flex-direction: row;
+                  align-items: center;
+                  .time {
+                    margin: 0 0 0 8px;
+                  }
+
+                  .icon-play-day {
+                    background: $legend-color-2;
+                    border-radius: 50%;
+                    color: $black;
+                    font-size: 8px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    width: 32px;
+                    height: 32px;
+                  }
+                }
+                &.noRegist {
+                  background: $error-color !important;
+                  .wrapper-time-transport {
+                    .time {
+                      color: $white;
+                    }
+                  }
+                }
+                &.lated {
+                  background: $legend-color-1;
+                }
+                &.play-day {
+                  background: $white;
+                }
+              }
+            }
+            tr:nth-child(even) {
+              td[rowspan="2"] {
+                background: $white !important;
+                border-left: 1px solid $border-color-2;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.time-semester-dropdown {
+  .custom-panel-calendar-wrapper {
+    display: flex;
+    flex-direction: row;
+    .ant-radio-group {
+      padding: 12px 0 0 16px;
+      .ant-radio-wrapper {
+        color: $active-color;
+        .ant-radio {
+          .ant-radio-inner {
+            border-color: $active-color;
+          }
+          &.ant-radio-checked {
+            .ant-radio-inner {
+              border-color: $active-blue-color-2;
+            }
+          }
+        }
+        &.ant-radio-wrapper-checked {
+          color: $active-color-2;
+        }
+      }
+    }
+    .main-calendar {
+      display: flex;
+      align-items: flex-end;
+      flex-direction: column;
+      .ant-btn {
+        width: 80px;
+        color: $white;
+        font-size: 14px;
+        margin: 6px 12px 6px;
+        border-color: $active-blue-color-2;
+        background-color: $active-blue-color-2;
+      }
+    }
+  }
+}
+
+.image-preview-root {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 999;
+  .image-preview-mask {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 998;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.45);
+  }
+  .image-preview-wrapper {
+    position: fixed;
+    z-index: 999;
+    top: calc(50% - 210px);
+    left: calc(50% - 210px);
+    .image-preview-img {
+      width: 420px;
+      height: 420px;
+    }
+    .image-close {
+      top: -12px;
+      right: -12px;
+      color: $suffix;
+      background-color: $white;
+      padding: 4px;
+      border-radius: 50%;
+      position: absolute;
+      cursor: pointer;
+    }
+  }
+}

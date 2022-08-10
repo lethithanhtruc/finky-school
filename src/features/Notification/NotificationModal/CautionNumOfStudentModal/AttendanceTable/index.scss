@@ -1,0 +1,57 @@
+@import "../../../../../styles/variables";
+
+.attendance-table__heading {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  letter-spacing: 0.15px;
+  color: $black-900;
+  margin-bottom: 8px;
+}
+
+.attendance-table {
+  .ant-table-thead {
+    .ant-table-cell-scrollbar {
+      visibility: hidden;
+    }
+
+    .ant-table-cell {
+      line-height: 16px;
+      padding-top: 4px;
+      padding-bottom: 4px;
+    }
+  }
+
+  .ant-table-cell {
+    color: $black-900;
+    font-weight: normal !important;
+    font-size: 14px;
+    padding: 5px 10px;
+    line-height: 20px;
+
+    &:last-child {
+      padding-right: 0;
+    }
+  }
+
+  .attendance-table__status {
+    color: $dark-red;
+  }
+
+  .attendance-table__time {
+    .ant-avatar {
+      margin-right: 2px;
+    }
+  }
+
+  ::-webkit-scrollbar {
+    width: 18px;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    border: 6px solid transparent;
+    border-radius: 20px;
+    background-clip: padding-box;
+    background-color: $disable-color;
+  }
+}

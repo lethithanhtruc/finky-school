@@ -1,0 +1,55 @@
+@import "../../../../styles/variables";
+
+.notification-modal {
+  position: relative;
+  // Close Button
+  .notification_modal__close-icon {
+    color: $white;
+    font-size: 20px;
+    line-height: 48px;
+  }
+
+  // Header
+  .ant-modal-header {
+    height: 48px;
+    padding: 12px 24px 13px 24px;
+    background-color: $primary-color;
+
+    .notification-modal__title {
+      color: $white;
+      font-size: 20px;
+      font-weight: normal;
+      line-height: 23px;
+    }
+  }
+
+  // Body
+  .ant-modal-body {
+    display: flex;
+    height: 100%;
+    padding: 8px;
+
+    .notification-modal__block {
+      height: 100%;
+      padding: 16px;
+      margin: 0;
+
+      border: 0.5px solid $border-color-3;
+      border-radius: 8px;
+
+      &:first-of-type {
+        margin-right: 16px;
+      }
+
+      // &--left {
+      //   width: 265px;
+      //   margin-right: 16px;
+      // }
+
+      // &--right {
+      //   overflow-x: auto;
+      //   padding-right: 0;
+      // }
+    }
+  }
+}

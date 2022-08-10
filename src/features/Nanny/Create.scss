@@ -1,0 +1,12 @@
+.nanny-create-page{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+
+    .block{
+        margin-bottom: 0;
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+    }
+}

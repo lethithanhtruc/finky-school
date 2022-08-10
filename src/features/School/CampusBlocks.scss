@@ -1,0 +1,103 @@
+.wrapper-campus-info{
+    color: #4E4B66;
+    font-weight: 500;
+
+    .wrapper-info{
+        margin-bottom: 5px;
+
+        .ant-form-item{
+            margin-bottom: 5px;
+
+            .ant-input, .ant-select-selector, .ant-picker{
+                border: 0;
+                border-radius: 4px;
+                background: rgba(13, 146, 246, 0.15)!important;
+                color: #4E4B66;
+            }
+        }
+
+        .label-info{
+            font-weight: 600;
+            color: #16499C;
+        }
+    }
+
+    .wrapper-btn-actions{
+        border-top: 1px solid #C4C4C4;
+        padding-top: 15px;
+        text-align: right;
+
+        button{
+            margin-left: 7px;
+            min-width: 126px;
+        }
+    }
+
+    .actions{
+        margin-top: 12px;
+
+        button{
+            color: #14142B;
+            margin-left: 5px;
+            border: 0;
+
+            svg{
+                font-size: 20px;
+            }
+        }
+    }
+
+    .wrapper-grades{
+        border-top: 1px solid #1D39DB;
+        margin-top: 10px;
+        padding-top: 15px;
+
+        .wrapper-grade{
+            display: flex;
+            justify-content: flex-start;
+            align-items: baseline;
+            margin-bottom: 8px;
+
+            .grade-title{
+                width: 108px;
+                text-align: right;
+                margin-right: 20px;
+                color: #16499C;
+                font-weight: bold;
+            }
+
+            .wrapper-classrooms{
+                width: 100%;
+
+                .classrooms{
+                    .classroom{
+                        font-weight: bold;
+                        font-size: 14px;
+                        line-height: 17px;
+                        color: #4E4B66;
+                        background: #FFFFFF;
+                        border: 0.5px solid #4E4B66;
+                        border-radius: 4px;
+                        padding: 4px 6px;
+                        margin-right: 6px;
+                        margin-bottom: 8px;
+                        display: inline-block;
+                    }
+                }
+
+                .wrapper-btn-add{
+                    button{
+                        color: #6B48FF;
+                        padding: 4px 6px;
+                        border: 1px solid #6B48FF;
+                        font-weight: bold;
+                        font-size: 14px;
+                        line-height: 17px;
+                        border-radius: 4px;
+                        height: auto;
+                    }
+                }
+            }
+        }
+    }
+}

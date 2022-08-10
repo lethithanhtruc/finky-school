@@ -1,0 +1,259 @@
+.create-classroom-page{
+    .wrapper-steps{
+        text-align: center;
+        margin-top: 17px;
+        margin-bottom: 24px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        .ant-steps{
+            max-width: 100%;
+            width: 475px;
+
+            .ant-steps-item-description{
+                width: 145px;
+                text-align: center;
+                color: #AEAEAE;
+                font-weight: 600;
+                margin-left: -90px;
+                margin-top: 46px;
+            }
+        }
+    }
+
+    .block-create-classroom-steps{
+        background: #fff;
+        padding: 24px;
+        box-shadow: 0px 0px 12px rgba(22, 73, 156, 0.15);
+        border-radius: 4px;
+        position: relative;
+        min-height: 660px;
+        padding-bottom: 115px;
+
+        .block-content{
+            color: #818181;
+            display: flex;
+            justify-content: center;
+
+            .inner-block-content{
+                width: 470px;
+                max-width: 100%;
+
+                &.inner-block-content-step1{
+                    .btn-password-generator{
+                        padding: 6px 10px;
+                        width: 100%;
+                    }
+
+                    .btn-subject-more{
+                        font-size: 12px;
+                        line-height: 14px;
+                        color: #0D92F6;
+                        margin-top: 8px;
+
+                        span{
+                            text-decoration: underline;
+                        }
+                    }
+                }
+
+                &.inner-block-content-step2{
+                    .wrapper-ignore{
+                        text-align: right;
+                        padding-right: 0;
+                        margin-bottom: 10px;
+
+                        button{
+                            padding: 0;
+                            color: #0D92F6;
+                            font-weight: normal;
+                        }
+                    }
+
+                    .wrapper-item-subject-teacher{
+                        position: relative;
+
+                        .ant-space-horizontal{
+                            margin-bottom: 0!important;
+                        }
+
+                        .wrapper-no{
+                            position: absolute;
+                            left: -48px;
+                            top: 6px;
+
+                            .label-key{
+                                width: 30px;
+                                height: 30px;
+                                border-radius: 50%;
+                                border: 1px solid #818181;
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+                                color: #818181;
+                                margin-right: 8px;
+                            }
+                        }
+
+                        .wrapper-actions{
+                            position: absolute;
+                            right: -40px;
+                            top: 11px;
+
+                            span.anticon{
+                                font-size: 19px;
+                                margin-left: 5px;
+                            }
+                        }
+                    }
+
+                    .btn-add{
+                        color: #AEAEAE;
+                        font-weight: 600;
+                        margin-left: 0;
+                        width: 100%;
+                        padding: 7px 10px;
+                    }
+                }
+
+                &.inner-block-content-step3{
+                    width: 100%;
+
+                    .wrapper-download-upload{
+                        border-right: 1px solid rgba(22, 73, 156, 0.5);
+                        padding-right: 39px;
+                        padding-top: 60px;
+                        padding-left: 18px;
+                        height: 100%;
+
+                        .wrapper-download-example{
+                            border: 0.5px solid #16499C;
+                            padding: 24px;
+                            padding-left: 24px;
+                            border-radius: 4px;
+                            font-weight: 500;
+                            font-size: 14px;
+                            color: #818181;
+                            line-height: 17px;
+
+                            .download-example{
+                                margin-left: 15px;
+                                .link-download{
+                                    margin-top: 15px;
+                                    color: #16499C;
+                                    font-size: 16px;
+                                    display: inline-block;
+
+                                    span{
+                                        text-decoration: underline;
+                                    }
+                                }
+                            }
+                        }
+
+                        .upload-title{
+                            color: #313131;
+                            font-weight: 500;
+                            font-size: 24px;
+                            text-align: center;
+                            margin: 39px 0 34px 0;
+                        }
+
+                        .wrapper-upload{
+                            .ant-upload.ant-upload-drag{
+                                background: #EFF5FF;
+                                border: 1px dashed #16499C;
+                                border-radius: 8px;
+                                padding: 10px 80px;
+
+                                .ant-upload-drag-icon{
+                                    margin-bottom: 10px;
+
+                                    .anticon{
+                                        color: #16499C;
+                                    }
+                                }
+                                .ant-upload-text{
+                                    color: #AEAEAE;
+                                    font-weight: 400;
+                                    font-size: 14px;
+                                    line-height: 17px;
+                                }
+                            }
+                        }
+                    }
+
+                    .list-title{
+                        font-weight: 500;
+                        font-size: 24px;
+                        color: #313131;
+                        margin-bottom: 21px;
+                    }
+
+                    .wrapper-table-student{
+                        .ant-table-thead th{
+                            background: #16499C!important;
+                            color: #fff!important;
+                            font-weight: 500!important;
+                            font-size: 16px;
+                            padding: 8px 16px;
+                        }
+
+                        .ant-table-tbody > tr > td{
+                            border-bottom: 1px solid #AEAEAE;
+                        }
+
+                        .ant-table.ant-table-bordered > .ant-table-container{
+                            border: 1px solid #AEAEAE;
+                            border-right: 0;
+                            border-bottom: 0;
+                        }
+
+                        .ant-table.ant-table-bordered > .ant-table-container > .ant-table-content > table > thead > tr > th, .ant-table.ant-table-bordered > .ant-table-container > .ant-table-header > table > thead > tr > th, .ant-table.ant-table-bordered > .ant-table-container > .ant-table-body > table > thead > tr > th, .ant-table.ant-table-bordered > .ant-table-container > .ant-table-content > table > tbody > tr > td, .ant-table.ant-table-bordered > .ant-table-container > .ant-table-header > table > tbody > tr > td, .ant-table.ant-table-bordered > .ant-table-container > .ant-table-body > table > tbody > tr > td, .ant-table.ant-table-bordered > .ant-table-container > .ant-table-content > table > tfoot > tr > th, .ant-table.ant-table-bordered > .ant-table-container > .ant-table-header > table > tfoot > tr > th, .ant-table.ant-table-bordered > .ant-table-container > .ant-table-body > table > tfoot > tr > th, .ant-table.ant-table-bordered > .ant-table-container > .ant-table-content > table > tfoot > tr > td, .ant-table.ant-table-bordered > .ant-table-container > .ant-table-header > table > tfoot > tr > td, .ant-table.ant-table-bordered > .ant-table-container > .ant-table-body > table > tfoot > tr > td{
+                            border-right: 1px solid #AEAEAE;
+                        }
+                    }
+                }
+
+                .ant-form-item{
+                    margin-bottom: 12px;
+
+                    .ant-form-item-label{
+                        width: 160px;
+                        text-align: left;
+
+                        > label{
+                            font-size: 16px;
+                            color: #818181;
+                        }
+                    }
+
+                    .ant-checkbox + span {
+                        font-size: 16px;
+                        color: #818181;
+                    }
+                }
+            }
+        }
+
+        .block-footer{
+            display: flex;
+            justify-content: center;
+            border-top: 1px solid #AEAEAE;
+            padding-top: 32px;
+            padding-bottom: 32px;
+            margin-top: 16px;
+            position: absolute;
+            bottom: 0;
+            left: 24px;
+            right: 24px;
+
+            .inner-block-footer{
+                width: 470px;
+                max-width: 100%;
+                text-align: right;
+            }
+        }
+    }
+}

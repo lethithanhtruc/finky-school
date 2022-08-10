@@ -1,0 +1,56 @@
+.device-edit-form {
+    flex: 1;
+    display: flex;
+
+    .device-edit-form__note {
+        .ant-form-item-label {
+            margin-right: -5px;
+        }
+
+        .ant-form-item-control-input {
+            width: calc(100% + 5px);
+        }
+    }
+}
+
+.device-active-option {
+    position: relative;
+    padding-left: 20px;
+    &::before {
+        position: absolute;
+        content: '';
+        background: #44D581;
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        top: 5px;
+        left: 0px;
+    }
+}
+
+.device-inactive-option {
+    position: relative;
+    padding-left: 20px;
+    &::before {
+        position: absolute;
+        content: '';
+        background: #FF4A33;
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        top: 5px;
+        left: 0px;
+    }
+}
+
+.ant-select-selector {
+    .ant-select-selection-item {
+        .device-active-option,
+        .device-inactive-option {
+            &::before {
+                top: 10px;
+            }
+        }
+
+    }
+}

@@ -1,0 +1,196 @@
+@import "../../styles/variables";
+
+.student-page {
+  .wrapper-tool {
+    margin-bottom: 66px;
+  }
+  .wrapper-filter {
+    margin-bottom: 17px;
+
+    .wrapper-campus-filter {
+      margin-bottom: 11px;
+
+      > label {
+        font-weight: 600;
+        font-size: 20px;
+        color: #313131;
+        margin-right: 16px;
+      }
+
+      .ant-select {
+        color: #313131;
+        font-weight: 600;
+      }
+
+      .ant-select:not(.ant-select-customize-input) .ant-select-selector {
+        border: 0.5px solid #818181;
+        border-radius: 0px;
+      }
+    }
+
+    .wrapper-classroom-filter {
+      background: #ffffff;
+      border: 1px solid #16499c;
+      border-radius: 16px;
+      padding: 16px 24px;
+      margin-bottom: 32px;
+
+      > label {
+        font-weight: 600;
+        font-size: 16px;
+        color: #000000;
+      }
+
+      .wrapper-classrooms {
+        margin-top: 10px;
+
+        .classrooms {
+          .ant-radio-wrapper {
+            border: 0.5px solid #313131;
+            border-radius: 4px;
+            margin-bottom: 8px;
+
+            .ant-radio {
+              display: none;
+
+              & + span {
+                font-weight: bold;
+                font-size: 16px;
+                color: #313131;
+                padding: 4px 6px;
+              }
+            }
+
+            &.ant-radio-wrapper-checked {
+              background: #003489;
+              border-color: #003489;
+
+              .ant-radio {
+                & + span {
+                  color: #fff;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .wrapper-form-search {
+      .ant-form-item {
+        margin-bottom: 0;
+      }
+
+      .wrapper-input-search-filter {
+        .ant-input-affix-wrapper {
+          padding: 6px 11px;
+          border: 0.5px solid #818181;
+          border-radius: 0;
+
+          .ant-input-prefix {
+            color: #818181;
+            font-size: 20px;
+            margin-right: 8px;
+          }
+
+          input {
+            font-weight: normal;
+            font-size: 14px;
+            color: #818181;
+            width: 281px;
+          }
+        }
+      }
+
+      .wrapper-btn-search-filter {
+        button {
+          background: linear-gradient(180deg, #ee509c 0%, #ee3958 100%);
+          padding: 6px 10px;
+        }
+      }
+    }
+  }
+  .custom-color {
+    border: 1px solid $disable-color;
+    color: $active-color;
+    font-size: 14px;
+    font-weight: normal;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    .anticon {
+      font-size: 12px;
+      margin: 3px 0 0 12px;
+    }
+    &:hover {
+      color: $primary-color;
+      border-color: $primary-color;
+    }
+    &.ant-dropdown-open {
+      color: $primary-color;
+      border-color: $primary-color;
+    }
+    &.action-create {
+      .anticon {
+        font-size: 14px;
+        margin: 0 12px 0 0;
+      }
+    }
+  }
+  .ant-table-wrapper {
+    .ant-table-content {
+      .ant-table-tbody {
+        tr {
+          td {
+            &.column-action {
+              .actions {
+                .ant-space-item {
+                  margin-right: 10px;
+                  padding: 0;
+                  &:last-child {
+                    margin-right: 0;
+                  }
+                  .ant-btn {
+                    padding: 0;
+                    margin: 0;
+                    border: none;
+                    width: auto;
+                    height: auto;
+                  }
+                  .link-history {
+                    svg {
+                      path {
+                        fill: $primary-grey-color;
+                        margin: 0 0 0 0;
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.student-page-dropdown-action-wrapper {
+  .ant-dropdown-menu-item {
+    display: flex;
+    svg {
+      margin-right: 10px;
+      path {
+        fill: $black;
+      }
+    }
+    &.ant-dropdown-menu-item-disabled {
+      svg {
+        path {
+          fill: rgba($black, 0.25);
+        }
+      }
+    }
+  }
+}

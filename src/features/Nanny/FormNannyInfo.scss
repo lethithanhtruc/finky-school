@@ -1,0 +1,92 @@
+.form-nanny-info{
+    .wrapper-info{
+        font-style: normal;
+        font-weight: 600;
+        font-size: 20px;
+        color: #000;
+
+        &.owner{
+            border-top: 1px solid #C4C4C4;
+            padding-top: 8px;
+            padding-bottom: 8px;
+            margin-top: 8px;
+        }
+    }
+
+    .ant-form-item{
+        margin-bottom: 16px;
+
+        .ant-form-item-label{
+            white-space: inherit;
+            text-align: left;
+
+            label{
+                width: 100px;
+                font-weight: normal;
+                font-size: 14px;
+                line-height: 17px;
+                color: #313131;
+                margin-right: 18px;
+
+                &:before{
+                    display: none;
+                }
+            }
+        }
+
+        .ant-form-item-control{
+            .ant-form-item-control-input{
+                input, textarea, .ant-select{
+                    font-weight: normal;
+                    font-size: 14px;
+                    color: #000;
+                }
+                input[type=text], textarea, .ant-picker{
+                    padding-top: 6.5px;
+                    padding-bottom: 6.5px;
+                }
+                .ant-select-selector{
+                    padding-top: 3.5px;
+                    padding-bottom: 3.5px;
+                }
+                .ant-select-single:not(.ant-select-customize-input) .ant-select-selector{
+                    padding-top: 2.5px;
+                    padding-bottom: 2.5px;
+                    height: auto;
+                }
+            }
+        }
+
+        &.wrapper-item-status{
+            .ant-form-item-label{
+                label{
+                    width: 100%;
+                }
+            }
+        }
+
+        &.wrapper-item-code-generate{
+            button{
+                padding: 6.5px 20px;
+                background: rgba(0, 52, 137, 0.05)!important;
+                border: 0.5px solid #16499C;
+                border-radius: 0;
+                font-weight: 600;
+                font-size: 14px;
+                color: #16499C;
+            }
+        }
+
+        &.wrapper-item-buttons{
+            margin-bottom: 0;
+
+            button{
+                width: 126px;
+            }
+        }
+
+        .ant-form-item{
+            margin-bottom: 0;
+        }
+    }
+}

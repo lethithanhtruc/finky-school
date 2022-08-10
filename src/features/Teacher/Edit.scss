@@ -1,0 +1,146 @@
+.teacher-edit-page{
+    .block{
+        .block-title{
+            font-weight: 600;
+            font-size: 20px;
+        }
+    }
+
+    .wrapper-button-tool{
+        margin-top: 10px;
+        margin-bottom: 60px;
+    }
+
+    .wrapper-teaching-infor{
+        position: relative;
+        padding-top: 32px;
+        margin-top: 32px;
+
+        >.title{
+            font-weight: 600;
+            font-size: 20px;
+            color: #000000;
+            margin-bottom: 40px;
+        }
+
+        &:before{
+            content: " ";
+            width: 100%;
+            height: 1px;
+            background: #AEAEAE;
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+        }
+
+        .wrapper-schoolyear{
+            .wrapper-select-schoolyear > label{
+                font-size: 16px;
+                font-weight: 600;
+            }
+        }
+
+        .list-select-type-template{
+            padding: 0;
+            margin-top: 20px;
+
+            li{
+                display: inline-block;
+                margin-right: 32px;
+                position: relative;
+                padding-left: 52px;
+                font-size: 16px;
+                line-height: 36px;
+                color: #000000;
+                margin-bottom: 16px;
+
+                &:before{
+                    content: ' ';
+                    width: 36px;
+                    height: 36px;
+                    border-radius: 50%;
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    background: #8ECAE6;
+                }
+
+                &.homeroom-teacher{
+                    &:before {
+                        background: #FB8500;
+                    }
+                }
+            }
+        }
+
+        .wrapper-campuses{
+            border: 1px #818181;
+            border-style: solid;
+            border-radius: 16px;
+            width: 100%;
+            padding: 21px 50px;
+
+            &.empty-classroom{
+                border-style: dashed;
+
+                .wrapper-empty-classroom{
+                    padding: 39px;
+                    text-align: center;
+                    font-weight: normal;
+                    font-size: 20px;
+                    color: #818181;
+                }
+            }
+
+            .ant-collapse-header{
+                font-weight: bold;
+                font-size: 18px;
+                color: #000000;
+                padding-bottom: 0;
+            }
+
+            .wrapper-grades{
+                .wrapper-grade{
+                    margin-bottom: 8px;
+
+                    .grade-title{
+                        font-size: 14px;
+                        line-height: 17px;
+                        color: #16499C;
+                        width: 100px;
+                        font-weight: bold;
+                    }
+                    .wrapper-classrooms{
+                        .classrooms{
+                            .classroom{
+                                border: 1px solid;
+                                border-color: #313131;
+                                border-radius: 4px;
+                                padding: 4px 6px;
+                                display: inline-block;
+                                margin-right: 8px;
+                                margin-bottom: 8px;
+                                font-weight: bold;
+                                font-size: 16px;
+                                color: #313131;
+
+                                &.homeroom-teacher{
+                                    background: #FB8500!important;
+                                    border-color: #FB8500!important;
+                                    color: #fff!important;
+                                }
+
+                                &.subject-teacher{
+                                    background: #8ECAE6;
+                                    border-color: #8ECAE6;
+                                    color: #fff;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

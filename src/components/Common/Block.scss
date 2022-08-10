@@ -1,0 +1,27 @@
+@import '../../styles/variables';
+@import '../../styles/responsive';
+
+.block{
+    margin-bottom: 24px;
+    background: #FFFFFF;
+    border: 0.5px solid #1D39DB;
+    border-radius: 16px;
+    padding: 18px;
+
+    &.active{
+        border: 2.5px solid #EE509C;
+    }
+
+    .block-title{
+        font-weight: bold;
+        font-size: 18px;
+        line-height: 21px;
+        color: #000000;
+        margin-bottom: 10px;
+    }
+
+    .block-content{
+
+    }
+}
+

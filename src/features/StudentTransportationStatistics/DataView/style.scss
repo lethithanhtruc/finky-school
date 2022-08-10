@@ -1,0 +1,61 @@
+.student-transportation-statistics__data-view {
+    .data-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .data-header__title {
+            font-size: 24px;
+            line-height: 24px;
+            font-weight: 700;
+        }
+    }
+
+    .data-body {
+        margin-top: 10px;
+
+        .transportation-started {
+            border-radius: 4px;
+            background: #0044aa;
+            color: white;
+            text-align: center;
+            font-size: 12px;
+        }
+
+        .transportation-unfinish {
+            color: #818181;
+            border: 1px #818181 solid;
+            border-radius: 4px;
+            text-align: center;
+            font-size: 12px;
+        }
+
+        .transportation-failed {
+            border-radius: 4px;
+            background: #E11900;
+            color: white;
+            text-align: center;
+            font-size: 12px;
+        }
+
+        .transportation-finish {
+            border-radius: 4px;
+            background: #00aa63;
+            color: white;
+            text-align: center;
+            font-size: 12px;
+        }
+
+        .student-inout__full {
+            color: #818181;
+            font-size: 12px;
+        }
+
+        .student-inout__missing {
+            color: #e11900;
+            border-radius: 4px;
+            background: rgba(225, 25, 0, 0.15);
+            font-size: 12px;
+        }
+    }
+}

@@ -1,0 +1,20 @@
+.scrollbars-custom{
+    > .view > div{
+        margin-right: 16px;
+    }
+
+    .track-vertical{
+        width: 9px!important;
+        right: 0;
+        bottom: 0;
+        top: 0;
+        background: #ECECEC;
+        border-radius: 20px;
+
+        .thumb-vertical{
+            background: #2369DA;
+            height: 55px;
+            border-radius: 20px;
+        }
+    }
+}

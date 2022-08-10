@@ -1,0 +1,119 @@
+.wrapper-content{
+  height: 100vh;
+
+  .wrapper-banner{
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom left;
+  }
+
+  .content{
+    height: 100vh;
+    position: relative;
+    margin-left: 50px;
+    margin-right: 72px;
+    padding-top: 27px;
+
+    .content-top{
+      .logo{
+        width: 72px;
+        height: 72px;
+        border-radius: 50%;
+        background-size: 72px;
+      }
+      .info{
+        .sub{
+          font-weight: 500;
+          font-size: 14px;
+          color: #313131;
+        }
+        .main{
+          font-weight: 500;
+          font-size: 20px;
+          color: #313131;
+        }
+      }
+    }
+
+    .content-content{
+      .ant-form-item{
+        .ant-form-item-label{
+          padding-bottom: 10px;
+
+          label{
+            font-weight: bold;
+            font-size: 16px;
+            line-height: 18px;
+            color: #3A3A3A;
+          }
+        }
+
+        .ant-input, .ant-input-affix-wrapper-lg{
+          padding: 10.5px 24px;
+          font-size: 16px;
+          color: #313131;
+          border: 1px solid #818181;
+          border-radius: 8px;
+        }
+
+        .ant-input-affix-wrapper-lg{
+          > input.ant-input{
+            padding: 0;
+            border: 0;
+            background: transparent!important;
+          }
+        }
+
+        .ant-input:focus, .ant-input-focused, .ant-input-affix-wrapper:focus, .ant-input-affix-wrapper-focused{
+          border-color: #16499C!important;
+          box-shadow: none;
+        }
+
+        .ant-input[disabled]{
+          background: #F6F6F6;
+        }
+
+        &.ant-form-item-has-error{
+          .ant-input, .ant-input-affix-wrapper, .ant-input:hover, .ant-input-affix-wrapper:hover{
+            border-color: #E11900;
+            background: rgba(225, 25, 0, 0.15);
+          }
+        }
+        .ant-form-item-children-icon {
+          display: none;
+        }
+        .ant-form-item-explain.ant-form-item-explain-error {
+          color: #E11900;
+          font-size: 14px;
+          line-height: 20px;
+          margin-top: 4px;
+        }
+
+        .ant-btn{
+          background: #16499C;
+          border-radius: 8px;
+          font-weight: bold;
+          font-size: 24px;
+          color: #fff;
+          padding-top: 8.5px;
+          padding-bottom: 8.5px;
+        }
+      }
+    }
+
+    .content-bottom{
+      position: absolute;
+      bottom: 24px;
+      left: 0;
+
+      .logo-footer{
+        height: 100%;
+      }
+    }
+
+    .btn-full-width{
+      width: 100%;
+    }
+  }
+}

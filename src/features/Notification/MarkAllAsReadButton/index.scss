@@ -1,0 +1,23 @@
+@import "../../../styles/variables";
+
+.mark-all-as-read-btn {
+  position: relative;
+
+  text-align: right;
+  top: 22px;
+  margin-right: 24px !important;
+
+  font-weight: normal;
+  font-size: 12px;
+  letter-spacing: 0.4px;
+  color: $black-500;
+  z-index: 2;
+  transition: color 0.3s ease-in-out;
+
+  span {
+    &:hover {
+      color: $primary-color;
+      cursor: pointer;
+    }
+  }
+}
